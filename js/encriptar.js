@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function() {
 if (window.matchMedia("(max-width: 375px)").matches) {
 	function limitarMinusculas() {
 		var valor = inputTexto.value.toLowerCase();
-		inputTexto.value = valor.replace(/[^a-z\s.,]/g, '');
+		inputTexto.value = valor.replace(/[^a-z\s.,?¿]/g, '');
 		// funcion + ajustar texto
 		inputTexto.style.height = "auto";
 		inputTexto.style.height = inputTexto.scrollHeight + "px";
@@ -81,6 +81,6 @@ if (window.matchMedia("(max-width: 375px)").matches) {
 } else {
 	function limitarMinusculas() {
 		var valor = inputTexto.value.toLowerCase();
-		inputTexto.value = valor.replace(/[^a-z\s.,]/g, '');
+		inputTexto.value = valor.replace(/[^a-z\s.,?¿]/g, '');
 	}
 }
