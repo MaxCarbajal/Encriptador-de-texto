@@ -17,7 +17,6 @@ var clavesDesencriptar = {
   'ufat':  'u'
 };
 
-
 function encriptarTexto() {
 	var textoIngresado = inputTexto.value;
 	var textoResultado = '';
