@@ -53,15 +53,6 @@ function desencriptarTexto() {
   	}
 }
 
-// function mostrarResultado() {
-// 	outputTexto.value = textoResultado;
-//   	inputTexto.value = "";
-//   	sinResultados.style.display = "none";
-//   	conResultados.style.display = "flex";
-//   	inputTexto.focus();
-//   	ajustarAlturaTextArea();
-// }
-
 function copiar() {
 	outputTexto.select();
 	document.execCommand("copy");
