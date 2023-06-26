@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Encriptador de textos</title>
+		<link rel="stylesheet" href="css/principal.css">
+	</head>
+	<body>
+		<div class="contenedor">
+			<div class="seccion1">
+				<div class="seccion1_elemento1">
+					<img class="logo" src="img/logo.png">
+				</div>
+				<div class="seccion1_elemento2">
+					<textarea class="ingresar_areatexto" id="inputTexto" placeholder="Ingrese el mensaje que desea encriptar o desencriptar." oninput="limitarMinusculas()"></textarea>
+				</div>
+				<div class="seccion1_elemento3">
+					<div>
+						<img src="img/bi_exclamation-circle-fill.png">
+						<p class="alerta">Solo letras minúsculas y sin acentos</p>
+					</div>
+					<div class="botones">
+						<button class="boton_encriptar" id="encriptar" onclick="encriptarTexto()">Encriptar</button>
+						<button class="boton_desencriptar" id="desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+					</div>
+				</div>
+			</div>
+			<div class="seccion2">
+				<div class="seccion2_elemento1 botones" id="conResultados">
+					<textarea class="mostrar_areatexto" id="outputTexto" oninput="ajustarAlturaTextArea()"></textarea>
+					<button class="boton_copiar" id="copiar" onclick="copiar()">Copiar</button>
+				</div>
+				<div class="seccion2_elemento2" id="sinResultados">
+					<img src="img/sin_texto.png" alt="">
+					<p class="texto1">Ningún mensaje fue encontrado</p>
+					<p class="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/encriptar.js"></script>
+	</body>
+</html>
