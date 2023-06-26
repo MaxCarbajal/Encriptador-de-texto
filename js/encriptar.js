@@ -32,6 +32,8 @@ function encriptarTexto() {
 	  	conResultados.style.display = "flex";
 	  	inputTexto.focus();
 	  	ajustarAlturaTextArea();
+  	} else {
+  		alert('No seas imbecil !!!, ingrese el mensaje que desee encriptar antes de hacer clic')
   	}
 }
 
@@ -50,6 +52,8 @@ function desencriptarTexto() {
 	  	conResultados.style.display = "flex";
 	  	inputTexto.focus();
 	  	ajustarAlturaTextArea();
+  	}else {
+  		alert('No seas imbecil !!!, ingrese el mensaje que desee desencriptar antes de hacer clic')
   	}
 }
 

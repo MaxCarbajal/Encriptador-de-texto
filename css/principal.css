@@ -63,6 +63,7 @@ textarea:focus {
 
 .seccion1_elemento2 .ingresar_areatexto::placeholder {
 	color: #0A3871;
+	opacity: 0.5;
 }
 
 .seccion1_elemento3 div {
@@ -142,9 +143,12 @@ textarea:focus {
     line-height: 19.36px;
 }
 
-/*.botones button:hover {
-  background-color: #aaa;
-}*/
+
+.botones button:active {
+	position:relative;
+	top:1px;
+}
+
 
 .boton_encriptar {
     background: #0A3871;
@@ -153,12 +157,20 @@ textarea:focus {
     border-width: 1px;
 }
 
+.boton_encriptar:hover {
+  background-color: #092c58;
+}
+
 .boton_desencriptar {
 	background: #D8DFE8;
     color: #0A3871;
     border-color: #0A3871;
     border-width: 1px;
     border-style: solid;
+}
+
+.boton_desencriptar:hover {
+  background-color: #c6ccd3;
 }
 
 .boton_copiar {
