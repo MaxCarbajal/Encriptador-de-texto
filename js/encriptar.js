@@ -30,7 +30,7 @@ function encriptarTexto() {
 	  	inputTexto.value = "";
 	  	sinResultados.style.display = "none";
 	  	conResultados.style.display = "flex";
-	  	inputTexto.focus();
+	  	window.scrollTo(0, document.body.scrollHeight);
 	  	ajustarAlturaTextArea();
   	} else {
   		alert('No seas imbecil !!!, ingrese el mensaje que desee encriptar antes de hacer clic')
@@ -50,7 +50,7 @@ function desencriptarTexto() {
 	  	inputTexto.value = "";
 	  	sinResultados.style.display = "none";
 	  	conResultados.style.display = "flex";
-	  	inputTexto.focus();
+	  	window.scrollTo(0, document.body.scrollHeight);
 	  	ajustarAlturaTextArea();
   	}else {
   		alert('No seas imbecil !!!, ingrese el mensaje que desee desencriptar antes de hacer clic')
@@ -70,9 +70,9 @@ function ajustarAlturaTextArea() {
   outputTexto.style.height = outputTexto.scrollHeight + "px";
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  inputTexto.focus();
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//   inputTexto.focus();
+// });
 
 if (window.matchMedia("(max-width: 375px)").matches) {
 	function limitarMinusculas() {

@@ -242,18 +242,19 @@ textarea:focus {
 
 /*para movil*/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 430px) {
 
 	.seccion1_elemento2 {
 		height: auto;
 	}
 
 	.seccion1_elemento2 .ingresar_areatexto {
-		height: 300px;
+		height: 200px;
 	}
 
 	.seccion1_elemento3 .botones {
 		flex-direction: column;
+		align-items: center;
 	}
 
 	.seccion1_elemento3 .boton_encriptar {
