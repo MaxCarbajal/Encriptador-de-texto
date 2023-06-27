@@ -33,7 +33,7 @@ function encriptarTexto() {
 	  	window.scrollTo(0, document.body.scrollHeight);
 	  	ajustarAlturaTextArea();
   	} else {
-  		alert('No seas imbecil !!!, ingrese el mensaje que desee encriptar antes de hacer clic')
+  		alert('Ingrese el mensaje que desee encriptar antes de hacer clic')
   	}
 }
 
@@ -53,7 +53,7 @@ function desencriptarTexto() {
 	  	window.scrollTo(0, document.body.scrollHeight);
 	  	ajustarAlturaTextArea();
   	}else {
-  		alert('No seas imbecil !!!, ingrese el mensaje que desee desencriptar antes de hacer clic')
+  		alert('Ingrese el mensaje que desee desencriptar antes de hacer clic')
   	}
 }
 
@@ -69,10 +69,6 @@ function ajustarAlturaTextArea() {
   outputTexto.style.height = "auto";
   outputTexto.style.height = outputTexto.scrollHeight + "px";
 }
-
-// document.addEventListener("DOMContentLoaded", function() {
-//   inputTexto.focus();
-// });
 
 if (window.matchMedia("(max-width: 375px)").matches) {
 	function limitarMinusculas() {

@@ -64,6 +64,7 @@ textarea:focus {
 .seccion1_elemento2 .ingresar_areatexto::placeholder {
 	color: #0A3871;
 	opacity: 0.5;
+	font-size: 28px;
 }
 
 .seccion1_elemento3 div {
@@ -78,7 +79,7 @@ textarea:focus {
 
 .seccion1_elemento3 .botones {
 	justify-content: space-between;
-	margin-top: 16px;
+	margin-top: 10px;
 }
 
 .seccion2 div {
@@ -141,6 +142,7 @@ textarea:focus {
     padding: 24px;
     font-size: 16px;
     line-height: 19.36px;
+    margin: 5px;
 }
 
 
@@ -208,7 +210,8 @@ textarea:focus {
 
 	.seccion1_elemento2 {
 		margin: 45px 0px;
-		height: 35vh;
+		height: auto;
+		text-align: center;
 	}
 
 	.seccion1_elemento2 .ingresar_areatexto {
@@ -218,6 +221,10 @@ textarea:focus {
 	.seccion1_elemento3 div {
 	    margin: auto;
 	    width: 90%;
+	}
+
+	.seccion1_elemento3 .botones button {
+		margin: 5px;
 	}
 
 	.seccion2 {
@@ -242,7 +249,7 @@ textarea:focus {
 
 /*para movil*/
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 375px) {
 
 	.seccion1_elemento2 {
 		height: auto;
